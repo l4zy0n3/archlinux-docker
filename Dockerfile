@@ -4,4 +4,4 @@ STOPSIGNAL SIGRTMIN+3
 RUN pacman -Syy glibc systemd --noconfirm
 VOLUME [ “/sys/fs/cgroup” ]
 VOLUME [ “/sys/fs/fuse” ]
-RUN [“/sbin/init”]
+CMD ["/usr/lib/systemd/systemd"]
